@@ -1,0 +1,15 @@
+version: "3.3"
+services:
+  cpp-kernelsoft-alpine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cpp-kernelsoft-alpine
+    container_name: cpp-kernelsoft-alpine
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+    command: bash -c "g++ -o main main.cpp && ./main"
+    # stdin_open: true
+    # tty: true
