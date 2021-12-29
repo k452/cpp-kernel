@@ -1,0 +1,9 @@
+{
+  "name": "cpp-kernelsoft-alpine",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "cpp-kernelsoft-alpine",
+  "workspaceFolder": "/app",
+  "extensions": [
+    "ms-vscode.cpptools-extension-pack"
+  ]
+}
